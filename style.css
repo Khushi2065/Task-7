@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  color: #333;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #004085;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#reloadBtn {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  transition: all 0.3s ease;
+  margin-bottom: 40px;
+}
+
+#reloadBtn:hover {
+  background: linear-gradient(to right, #0056b3, #0099ff);
+  transform: scale(1.05);
+}
+
+#userContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.user-card {
+  background: #ffffff;
+  border-radius: 15px;
+  width: 280px;
+  padding: 20px 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.user-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.user-card h3 {
+  font-size: 1.4rem;
+  color: #007bff;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.user-card p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.user-card p strong {
+  color: #444;
+}
+
+#error {
+  font-size: 1.2rem;
+  color: red;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .user-card {
+    width: 90%;
+  }
+
+  #reloadBtn {
+    width: 80%;
+  }
+}
